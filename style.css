@@ -1,0 +1,178 @@
+/* ===== Global Style ===== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 40px;
+    background-color: #89a788;
+    color: #333;
+}
+
+.triangle-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #5b7e51;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+    z-index: -1;
+}
+
+.triangle-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #5b7e51;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    z-index: -1;
+}
+
+
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Table Style (jika masih digunakan) ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ===== Form Style ===== */
+form {
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* ===== Buttons ===== */
+button, .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+
+/* Default Button */
+button {
+    background: #03A9F4;
+}
+
+button:hover {
+    background: #0288D1;
+}
+
+/* Reusable Button Classes */
+.btn.edit {
+    background: #03A9F4;
+}
+
+.btn.edit:hover {
+    background: #0288D1;
+}
+
+.btn.delete {
+    background: #E53935;
+}
+
+.btn.delete:hover {
+    background: #C62828;
+}
+
+.btn.add {
+    background: #4CAF50;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.btn.add:hover {
+    background: #388E3C;
+}
+
+/* ===== Card Layout ===== */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    background: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    max-height: 150px;
+    width: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
